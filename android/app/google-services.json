@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "818844193665",
+    "firebase_url": "https://onesignal-800bf.firebaseio.com",
+    "project_id": "onesignal-800bf",
+    "storage_bucket": "onesignal-800bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818844193665:android:c9372b3b3ccb6094",
+        "android_client_info": {
+          "package_name": "com.il9m.ikonsult"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818844193665-jn5duchutivc041c1f9f1504biqubjkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP3bT68lzzM18sMXBRswqKiopRvWA4vIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818844193665-jn5duchutivc041c1f9f1504biqubjkt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "818844193665-42o9s9f3npag167b4mpftinl4ohlmav4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.il9m.ikonsult"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

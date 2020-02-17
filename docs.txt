@@ -1,0 +1,3 @@
+xcodebuild clean -workspace Runner.xcworkspace -scheme Runner
+ rm -rf /Users/vishwaspoojaryk/Library/Developer/Xcode/DerivedData
+ flutter create -i swift .

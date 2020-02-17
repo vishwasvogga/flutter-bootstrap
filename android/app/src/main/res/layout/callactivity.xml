@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:textSize="23sp"
+        android:text="Connecting..."
+        android:textColor="#ffffff"
+        android:layout_marginTop="32px"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/txt_connection_status"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:id="@+id/subscriber_container">
+
+        <FrameLayout
+            android:id="@+id/publisher_container"
+            android:layout_width="75dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#000"
+            android:padding="2dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|end"
+        android:background="#000">
+
+        <!--Call buttons-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/rel_call_button_section">
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/baseline_call_end_black_48"
+                android:id="@+id/rejectCall"
+                android:background="@drawable/round_corner_red"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"/>
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/baseline_call_black_48"
+                android:id="@+id/receiveCall"
+                android:background="@drawable/round_corner_green"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:padding="8dp"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+
+        <!--Reject button center aligned-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_record_voice_over_black_48"
+                android:id="@+id/resumeAudio"
+                android:layout_margin="24dp"
+                android:background="#fff"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_call_end_black_48"
+                android:id="@+id/muteAudio"
+                android:layout_margin="24dp"
+                android:background="#fff"
+                />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/baseline_voice_over_off_black_48"
+                android:id="@+id/rejectCallCentered"
+                android:background="@drawable/round_corner_red"
+                android:foregroundGravity="center"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_videocam_black_48"
+                android:id="@+id/muteVideo"
+                android:layout_margin="24dp"
+                android:background="#fff"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_videocam_off_black_48"
+                android:id="@+id/resumeVideo"
+                android:layout_margin="24dp"
+                android:background="#fff"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
